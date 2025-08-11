@@ -1,384 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Abhinand S Rajesh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Abhinand S Rajesh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinand S Rajesh - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Abhinand S Rajesh</h1>
+        <p>Cybersecurity & Ethical Hacking Enthusiast</p>
+        <div class="contact-info">
+            <a href="mailto:abhinandsrajesh16032004@gmail.com">abhinandsrajesh16032004@gmail.com</a>
+            <a href="https://www.linkedin.com/in/abhinand-s-rajesh" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Abhinand-S-Rajesh" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <div class="menu-links">
-          <ul>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Abhinand S Rajesh profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Abhinand S Rajesh</h1>
-        <p class="section__text__p2">Student at St. Joseph's Institute of Technology.</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https:https://www.linkedin.com/in/abhinand-s-rajesh/?originalSubdomain=in'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Abhinand-S-Rajesh'"
-          />
-        </div>
-      </div>
+    </div>
+</header>
+
+<main>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            A passionate and adaptable Computer Science student with a strong foundation in cybersecurity fundamentals and ethical hacking. 
+            Fluent in English, Tamil, and proficient in Malayalam. 
+            I am a problem solver with a knack for teamwork and clear communication.
+        </p>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1 week<br />Networking</p>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills & Certifications</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>C</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>Packet Tracer</li>
+                    <li>VirtualBox</li>
+                    <li>Networking Basics</li>
+                    <li>Network Security</li>
+                    <li>Nmap</li>
+                    <li>Cybersecurity Fundamentals</li>
+                    <li>Penetration Testing Basics</li>
+                </ul>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Engineering, Department of Computer Science.</p>
+            <div class="skill-category">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Introduction to Cybersecurity (Cisco NetAcad)</li>
+                    <li>CCNA: Introduction to Networks (Cisco NetAcad)</li>
+                    <li>CCNA: Switching, Routing and Wireless Essentials (Cisco NetAcad)</li>
+                    <li>CCNA: Enterprise Networking, Security and Automation (Cisco NetAcad)</li>
+                    <li>Ethical Hacking Essentials (EC-Council)</li>
+                    <li>Linux for Beginners (Infosys Springboard)</li>
+                </ul>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="job-entry">
+            <h3>Intern, Supraja Technologies</h3>
+            <p class="dates">May 2025 - July 2025</p>
+            <ul>
+                <li>Completed a 2-month offline cybersecurity and ethical hacking internship with practical labs and a final project on Webcam Spyware Security.</li>
+                <li>Gained hands-on experience in penetration testing and vulnerability assessment using tools like Nmap and Netdiscover in a Linux VirtualBox environment.</li>
+                <li>Presented the final project, which used face recognition and registry-based control to prevent unauthorized webcam access.</li>
+            </ul>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-card background-image-card" data-image="third.jpg">
+            <div class="project-content">
+                <h3>Webcam Spyware Security</h3>
+                <p>Designed and implemented a prototype to detect and mitigate unauthorized webcam access. Features include real-time monitoring of camera processes, permission enforcement, alerting, and forensic logging to aid incident response. Implemented using Python, OpenCV, system-level hooks, and basic anomaly detection techniques.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Abhinand-S-Rajesh/WebcamSpysec" target="_blank" rel="noopener">GitHub Repo</a>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+        <div class="project-card background-image-card" data-image="first.jpg">
+            <div class="project-content">
+                <h3>AI Assistant for Cyber Laws</h3>
+                <p>Developed an AI chatbot to interpret Indian Cyber Law queries using NLP. The project was shortlisted in a hackathon and presented to cybersecurity officials and police teams.</p>
+                <div class="project-links">
+                    <a href="https://github.com/AnbuSelvan007/Justice-Website" target="_blank" rel="noopener">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card background-image-card" data-image="second.jpg">
+            <div class="project-content">
+                <h3>Smart Care AI-Driven Online OP Booking System</h3>
+                <p>Created an AI-based OP booking system with role-based access and a real-time doctor dashboard, streamlining symptom-based appointments.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Abhinand-S-Rajesh/SmartCare" target="_blank" rel="noopener">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:abhinandsrajesh16032004@gmail.com">abhinandsrajesh16032004@gmail.com</a></p>
+
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div class="achievement-list">
+            <p><strong>Runner-Up:</strong> Paper Presentation at 18th National Level Technical Symposium, SRM Valliammai Engineering College.</p>
+            <p><strong>Cyberthon Finalist:</strong> Shortlisted in the top 75 out of 900 teams for the Justice Project.</p>
+            <p><strong>Team Contributor:</strong> Trained over 200 students in video editing through the Tech Pyndroid Internship Program.</p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/abhinand-s-rajesh/?originalSubdomain=in">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+</main>
+
+<footer>
+    <p>&copy; 2025 Abhinand S Rajesh. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const projectCards = document.querySelectorAll(".background-image-card");
+        projectCards.forEach(card => {
+            const imageUrl = card.getAttribute("data-image");
+            if (imageUrl) {
+                card.style.backgroundImage = `url('${imageUrl}')`;
+            }
+        });
+    });
+</script>
+
+</body>
 </html>
