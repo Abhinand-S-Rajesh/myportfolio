@@ -20,8 +20,6 @@ a:hover {
 
 .section {
     padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
     background: #2a2a2a;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -39,6 +37,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.about-me {
+    text-align: justify;
+}
+
 /* Header/Hero Section */
 .hero {
     text-align: center;
@@ -46,6 +48,7 @@ h2 {
     color: #fff;
     padding: 60px 20px;
     border-bottom: 5px solid #4CAF50;
+    position: relative; /* Added so .top-contact can be positioned inside */
 }
 
 .hero-content {
@@ -68,6 +71,25 @@ h2 {
 .contact-info a {
     margin: 0 10px;
     font-weight: bold;
+}
+
+/* NEW — Top right email & phone */
+.top-contact {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.top-contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.top-contact a:hover {
+    color: #81C784;
 }
 
 /* Skills Section */
@@ -187,15 +209,32 @@ h2 {
     background-color: #81C784;
 }
 
-/* Achievements Section */
-.achievement-list p {
-    background: #333;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    border-left: 4px solid #FFC107;
+/* Achievements section styles */
+.achievement-card {
+    display: block; /* Makes the entire card clickable */
+    background-color: #000; /* Black background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-decoration: none; /* Removes underline from the link */
+    color: #e0e0e0; /* Sets text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.achievement-card:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.achievement-card h3 {
+    color: #FFC107; /* Maintain the header color */
+    margin-top: 0;
+}
+
+.achievement-card p {
+    margin: 0;
+}
 /* Footer */
 footer {
     text-align: center;
