@@ -10,17 +10,14 @@
 <body>
 
 <header class="hero">
-    <!-- Top right email & phone -->
     <div class="top-contact">
         <a href="mailto:abhinandsrajesh16032004@gmail.com">abhinandsrajesh16032004@gmail.com</a>
         <a href="tel:+918807363551">+91-8807363551</a>
     </div>
-
     <div class="hero-content">
+        <img src="profile.png" alt="Abhinand S Rajesh" class="profile-photo">
         <h1>Abhinand S Rajesh</h1>
         <p>Cybersecurity & Ethical Hacking Enthusiast</p>
-
-        <!-- Social media stays centered -->
         <div class="contact-info">
             <a href="https://www.linkedin.com/in/abhinand-s-rajesh" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/Abhinand-S-Rajesh" target="_blank" rel="noopener">GitHub</a>
@@ -48,28 +45,28 @@
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Technical Skills</h3>
-                <ul>
-                    <li>C</li>
-                    <li>Git</li>
-                    <li>Linux</li>
-                    <li>Packet Tracer</li>
-                    <li>VirtualBox</li>
-                    <li>Networking Basics</li>
-                    <li>Network Security</li>
-                    <li>Nmap</li>
-                    <li>Cybersecurity Fundamentals</li>
-                    <li>Penetration Testing Basics</li>
-                </ul>
+                <div class="skills-list">
+                    <span class="skill-item">C</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Linux</span>
+                    <span class="skill-item">Packet Tracer</span>
+                    <span class="skill-item">VirtualBox</span>
+                    <span class="skill-item">Networking Basics</span>
+                    <span class="skill-item">Network Security</span>
+                    <span class="skill-item">Nmap</span>
+                    <span class="skill-item">Cybersecurity Fundamentals</span>
+                    <span class="skill-item">Penetration Testing Basics</span>
+                </div>
             </div>
             <div class="skill-category">
                 <h3>Certifications</h3>
                 <ul>
-                    <li>Introduction to Cybersecurity (Cisco NetAcad)</li>
-                    <li>CCNA: Introduction to Networks (Cisco NetAcad)</li>
-                    <li>CCNA: Switching, Routing and Wireless Essentials (Cisco NetAcad)</li>
-                    <li>CCNA: Enterprise Networking, Security and Automation (Cisco NetAcad)</li>
-                    <li>Ethical Hacking Essentials (EC-Council)</li>
-                    <li>Linux for Beginners (Infosys Springboard)</li>
+                    <li><a href="https://www.netacad.com/certificates?issuanceId=32a2d8f2-3ac8-4394-9c2a-ca8c16966bfc" target="_blank" rel="noopener">Introduction to Cybersecurity (Cisco NetAcad)</a></li>
+                    <li><a href="https://www.netacad.com/certificates?issuanceId=023dcfe3-0778-4db8-8ff7-e638877d68f5" target="_blank" rel="noopener">CCNA: Introduction to Networks (Cisco NetAcad)</a></li>
+                    <li><a href="https://www.netacad.com/certificates?issuanceId=9ee143ec-3bf7-46b5-9eb5-5347ceb80f81" target="_blank" rel="noopener">CCNA: Switching, Routing and Wireless Essentials (Cisco NetAcad)</a></li>
+                    <li><a href="https://www.netacad.com/certificates?issuanceId=47db8c2a-06cb-4c81-a3f1-78d1a0e12dbc" target="_blank" rel="noopener">CCNA: Enterprise Networking, Security and Automation (Cisco NetAcad)</a></li>
+                    <li><a href="https://learn.eccouncil.org/certificate/74265459-af6b-4452-bd85-1c93bab34430?logged=true" target="_blank" rel="noopener">Ethical Hacking Essentials (EC-Council)</a></li>
+                    <li><a href="https://drive.google.com/file/d/13jxqPM2pKQ1hGJNFL73Fba06E8v4-som/view?usp=sharing" target="_blank" rel="noopener">Linux for Beginners (Infosys Springboard)</a></li>
                 </ul>
             </div>
         </div>
@@ -89,73 +86,75 @@
     </section>
 
     <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-card background-image-card" data-image="third.jpg">
-            <div class="project-content">
-                <h3>Webcam Spyware Security</h3>
-                <p>Designed and implemented a prototype to detect and mitigate unauthorized webcam access. Features include real-time monitoring of camera processes, permission enforcement, alerting, and forensic logging to aid incident response. Implemented using Python, OpenCV, system-level hooks, and basic anomaly detection techniques.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Abhinand-S-Rajesh/WebcamSpysec" target="_blank" rel="noopener">GitHub Repo</a>
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="third.jpg" alt="WebcamSpySec">
+            <div class="project-info">
+                <h3>WebCamSpywareSecurity</h3>
+                <p>A python tool to prevent unauthorized access of webcam</p>
+                <div class="project-tech">
+                    <span>python 3.11</span>
+                    <span>smtp</span>
+                    <span>opencv</span>
                 </div>
+                <a href="https://github.com/Abhinand-S-Rajesh/WebcamSpysec" target="_blank" rel="noopener" class="github-link">Github</a>
             </div>
         </div>
-        <div class="project-card background-image-card" data-image="first.jpg">
-            <div class="project-content">
-                <h3>AI Assistant for Cyber Laws</h3>
-                <p>Developed an AI chatbot to interpret Indian Cyber Law queries using NLP. The project was shortlisted in a hackathon and presented to cybersecurity officials and police teams.</p>
-                <div class="project-links">
-                    <a href="https://github.com/AnbuSelvan007/Justice-Website" target="_blank" rel="noopener">GitHub Repo</a>
+
+        <div class="project-card">
+            <img src="second.jpg" alt="smartcare">
+            <div class="project-info">
+                <h3>SmartCare</h3>
+                <p>AI based online OP Booking System</p>
+                <div class="project-tech">
+                    <span>react.js</span>
+                    <span>tailwindcss</span>
+                    <span>firebase</span>
+                    <span>gpt3.5 turbo api</span>
                 </div>
+                <a href="https://github.com/Abhinand-S-Rajesh/SmartCare" target="_blank" rel="noopener" class="github-link">Github</a>
             </div>
         </div>
-        <div class="project-card background-image-card" data-image="second.jpg">
-            <div class="project-content">
-                <h3>Smart Care AI-Driven Online OP Booking System</h3>
-                <p>Created an AI-based OP booking system with role-based access and a real-time doctor dashboard, streamlining symptom-based appointments.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Abhinand-S-Rajesh/SmartCare" target="_blank" rel="noopener">GitHub Repo</a>
+
+        <div class="project-card">
+            <img src="first.jpg" alt="Justice">
+            <div class="project-info">
+                <h3>JusticeLeague</h3>
+                <p>AI assistant for cyber laws</p>
+                <div class="project-tech">
+                    <span>vercel</span>
+                    <span>React</span>
+                    <span>Mongo-db</span>
                 </div>
+                <a href="https://github.com/your-repo" target="_blank" rel="noopener" class="github-link">Github</a>
             </div>
         </div>
-    </section>
-
-    <section id="achievements" class="section">
-    <h2>Achievements</h2>
-    
-    <a href="https://drive.google.com/file/d/1haS6y2PH99y8fG0eqeAmUo_g4vHotKg1/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
-        <h3>Cyberthon Finalist</h3>
-        <p>Selected among the top 75 teams out of 900 in the Justice Project Hackathon for developing an AI-based solution to interpret Indian Cyber Laws.</p>
-    </a>
-
-    <a href="https://drive.google.com/file/d/13pd6CF_v0g2vtnFMKa8YT6Dgrc7iuUZ9/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
-        <h3>Runner-Up - National Level Paper Presentation</h3>
-        <p>Secured the Runner-Up position at the 18th National Level Technical Symposium hosted by SRM Valliammai Engineering College, showcasing innovative solutions in the field of cybersecurity.</p>
-    </a>
-
-    <a href="https://drive.google.com/file/d/198S0FhxnmtVkeeqJtrf5MNFGJOs6WXY8/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
-        <h3>Team Contributor - Tech Pyndroid Internship</h3>
-        <p>Played a key role in training over 200 students in professional video editing tools and techniques during the Tech Pyndroid Internship Program.</p>
-    </a>
-
+    </div>
 </section>
 
+
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <a href="https://drive.google.com/file/d/1haS6y2PH99y8fG0eqeAmUo_g4vHotKg1/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
+            <h3>Cyberthon Finalist</h3>
+            <p>Selected among the top 75 teams out of 900 in the Justice Project Hackathon for developing an AI-based solution to interpret Indian Cyber Laws.</p>
+        </a>
+        <a href="https://drive.google.com/file/d/13pd6CF_v0g2vtnFMKa8YT6Dgrc7iuUZ9/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
+            <h3>Runner-Up - National Level Paper Presentation</h3>
+            <p>Secured the Runner-Up position at the 18th National Level Technical Symposium hosted by SRM Valliammai Engineering College, showcasing innovative solutions in the field of cybersecurity.</p>
+        </a>
+        <a href="https://drive.google.com/file/d/198S0FhxnmtVkeeqJtrf5MNFGJOs6WXY8/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card">
+            <h3>Team Contributor - Tech Pyndroid Internship</h3>
+            <p>Played a key role in training over 200 students in professional video editing tools and techniques during the Tech Pyndroid Internship Program.</p>
+        </a>
+    </section>
 </main>
 
 <footer>
     <p>&copy; 2025 Abhinand S Rajesh. All Rights Reserved.</p>
 </footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const projectCards = document.querySelectorAll(".background-image-card");
-        projectCards.forEach(card => {
-            const imageUrl = card.getAttribute("data-image");
-            if (imageUrl) {
-                card.style.backgroundImage = `url('${imageUrl}')`;
-            }
-        });
-    });
-</script>
 
 </body>
 </html>
